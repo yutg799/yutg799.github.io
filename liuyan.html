@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="css/css.css" rel="stylesheet" />
+</head>
+<body>
+  
+    <style>
+.main
+{ 
+width:1000px; 
+height:auto; 
+margin:10px auto; 
+font-size:14px; 
+line-height:24px; 
+color:#555;
+}
+.main h2
+{
+font-size:18px; 
+line-height:56px; 
+color:#f00;
+}
+.main p
+{
+font-size:14px; 
+line-height:30px; 
+color:#555; 
+text-indent:2em;
+}
+.main_list
+{ 
+width:960px; 
+height:auto; 
+}
+.main_list li
+{ 
+width:220px;
+height:100px;
+float:left; 
+margin:3px; 
+border:2px solid #fff;
+font-size:14px; 
+line-height:24px;
+}
+.main_list li:hover
+{
+border:2px solid #ffca2c;
+}
+.main_list li img
+{ 
+width:220px; 
+height:100px; 
+}
+</style>
+    </style>
+    <div class="head">
+        <div class="logo"></div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">我的首页 </a></li>  
+                <li><a href="jingdian.html">热爱电影 </a></li>
+                <li><a href="meishi.html">热爱美食</a></li>
+                <li><a href="fengjing.html">热爱运动</a></li>
+                <li><a href="liuyan.html">用户注册</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <h2>用户注册</h2>
+        <div>
+         <form id="form1" method="post" action="">
+              <table width="100%" border="0" cellpadding="0" cellspacing="0" class="ziti">
+                <tr>
+                  <td width="33%" align="right">注册用户名：</td>
+                  <td width="58%" align="left"><input type="text" name="textfield" /></td>
+                  <td width="9%">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td align="right">&nbsp;</td>
+                  <td align="left">&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td align="right">登陆密码：</td>
+                  <td align="left"><input type="password" name="textfield2" /></td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td align="right">&nbsp;</td>
+                  <td align="left">&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td align="right">请再次输入您的密码：</td>
+                  <td align="left"><input type="text" name="textfield3" /></td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td align="right">&nbsp;</td>
+                  <td align="left">&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td align="right">性别：</td>
+                  <td align="left"><label>
+                    <input name="radiobutton" type="radio" value="radiobutton" checked="checked" />
+                    </label>
+                    男
+                    <label>
+                      <input type="radio" name="radiobutton" value="radiobutton" />
+                    </label>
+                  女 <br /></td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td align="right">&nbsp;</td>
+                  <td align="left">&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td align="right">爱好：</td>
+                  <td align="left"><input type="checkbox" name="checkbox" value="checkbox" />
+                    娱乐
+                      <input type="checkbox" name="checkbox2" value="checkbox" />
+                    健身
+                    <input type="checkbox" name="checkbox3" value="checkbox" />
+                    游戏
+                    <input type="checkbox" name="checkbox4" value="checkbox" />
+                  旅游</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td align="right">&nbsp;</td>
+                  <td align="left">&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td align="right">请选择您是如何知道本站的：</td>
+                  <td align="left"><label>
+                    <select name="select">
+                      <option>网站搜索</option>
+                      <option>朋友介绍</option>
+                    </select>
+                  </label></td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td align="right">&nbsp;</td>
+                  <td align="left">&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td align="right">邮箱：</td>
+                  <td align="left"><input type="text" name="textfield4" /></td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td align="right">&nbsp;</td>
+                  <td align="left">&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td align="right" valign="top">建议：</td>
+                  <td align="left"><label>
+                    <textarea name="textarea" wrap="virtual"></textarea>
+                  </label></td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td align="right">&nbsp;</td>
+                  <td align="left">&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td align="right">&nbsp;</td>
+                  <td align="left"><label>
+                    <input type="submit" onclick="alert('注册成功')" name="Submit" value="确认注册" />
+                    <input type="submit" name="Submit2" onclick="formReset()" value="重新输入" />
+                  </label></td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td align="right">&nbsp;</td>
+                  <td align="left">&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </table>
+              <p>&nbsp;</p>
+            </form>
+        </div>
+      </div>
+<div class="foot">
+    <p>版权所有 我的个人网页</p>
+</div>
+</body>
+<script>
+	function formReset()
+  {
+  document.getElementById("form1").reset();
+  }
+</script>
+</html>
